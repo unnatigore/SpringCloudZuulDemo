@@ -1,0 +1,5 @@
+package com.capgemini.springBootZuulGatewayproxyHelloService.controller;
+
+public class HelloServiceController {
+
+}

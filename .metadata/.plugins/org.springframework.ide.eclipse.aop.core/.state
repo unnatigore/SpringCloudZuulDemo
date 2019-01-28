@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="WebsiteService"/>
+<aop-project name="springBootZuulServiceproxy"/>
+<aop-project name="HelloService"/>
+</aop-reference-model>

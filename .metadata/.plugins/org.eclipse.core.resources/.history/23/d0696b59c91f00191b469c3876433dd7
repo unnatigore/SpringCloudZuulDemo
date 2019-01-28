@@ -1,0 +1,5 @@
+package com.maoneymoney.app.accountservice.repo;
+
+public class AccountRepository {
+
+}

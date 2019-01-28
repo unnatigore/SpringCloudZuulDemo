@@ -1,0 +1,18 @@
+package com.capgemini.WebsiteService.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class WebsiteServiceController {
+
+	@Autowired
+	private RestTemplate restTemplate;
+
+	@RequestMapping("/index")
+	public ModelAndView gethelloWorld() {
+		String message = restTemplate.exchange("http://HelloWorldService/helloWorlds", HttpMethod.GET,null,new ParameterizedTypeReference<String>() {
+		}).getBody();
+		return new ModelAndView("index","message",message);
+}
+
+}

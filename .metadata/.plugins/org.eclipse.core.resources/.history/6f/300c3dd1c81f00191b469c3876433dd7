@@ -1,0 +1,30 @@
+package com.moneymoney.app.accountservice;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import com.maoneymoney.app.accountservice.entity.SavingsAccount;
+import com.maoneymoney.app.accountservice.repo.AccountRepository;
+
+@SpringBootApplication
+public class AccountServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(AccountServiceApplication.class, args);
+	}
+	
+	@Bean 
+	public CommandLineRunner LoadInitialDate(AccountRepository repository) {
+		
+		return (evt) -> {
+			repository.save(new SavingsAccount (101,"Unnati",true));
+			
+		};
+		
+		
+	}
+
+}
+

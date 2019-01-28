@@ -1,0 +1,14 @@
+package com.capgemini.springBootZuulGatewayproxyWebsiteService;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringBootZuulGatewayproxyWebsiteServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBootZuulGatewayproxyWebsiteServiceApplication.class, args);
+	}
+
+}
+
